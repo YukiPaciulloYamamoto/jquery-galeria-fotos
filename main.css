@@ -1,0 +1,87 @@
+* { /* Formatação baisca para CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{ /* Estilizando o cabeçalho */
+    background-color: rebeccapurple;
+    padding: 12px 0;
+    color: #fff;
+    display: flex;
+    border-bottom: 16px solid #522580; /* Colocando uma borda abaixo para melhor divisão */
+    justify-content: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button{
+    margin-left: 16px; /* Colocando */
+}
+
+form{ /* Estilizando os formulários */
+    background-color: #f0f0f0;
+    padding: 24px 0;
+    text-align: center;
+    display: none; /* Deixando ele invisivel para faze uma transição com o JQuery */
+}
+
+form h2{
+    margin-bottom: 16px;  
+}
+
+input, button{ /* Espaçamento entre os inputs e o botão */
+    padding: 8px;
+}
+
+button{ /* Estilizando o botão */
+    background-color: green;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+
+#botao-cancelar{ /* Dando cor ao botão cancelar */
+    background-color: red;
+}
+
+ul{ /* Estilizando como as imagens ficam || flex-wrap: wrap serve para as imagens "quebrarem linhas" */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul li{ /* Limitando o tamanho das imagens para caber 4 na mesma linha */
+    max-width: 25%;
+    list-style: none; /* tirando o . preto que fica no canto inferior direito das imagens por conta do <li></li> */
+    position: relative;
+    height: 250px; /* Limitando o tamanho a 250px para padronizar as imagens */ 
+    overflow-y: hidden;
+}
+
+ul li img{ /* Limitando o tamanho das imagens a 100% (Se cada uma é 25% 4 imagens por linha)*/ 
+    width: 100%; /* Isso tambem ajuda a tirar as imagens uma de cima da outra */
+}
+
+.overlay-image-link{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute; /* Position absolute - Para nao "vazar" a gente tem que aplicar outra position em na parte onde se incontra a <li> */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0; /* Fazendo com que a barra suma */
+    transition: all ease .5s; /* Transição!!!!! 0.5s para a barra aparecer quando colocado o mouse*/
+}
+
+.overlay-image-link a{
+    color: #fff;
+    text-decoration: none; /* Removendo a ___ */
+}
+
+ul li:hover .overlay-image-link{ 
+    opacity: 1; /* Fazendo com que a barra volte a aparecer quando colocado o mouse */
+
+}

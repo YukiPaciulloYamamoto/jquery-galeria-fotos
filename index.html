@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <button type="button">Nova imagem +</button> <!-- Botão para adicionar imagem -->
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input type="url" id="endereco-imagem-nova" required placeholder="URL da imagem">
+        <button type="submit">Adicionar</button> <!-- Botão adicionar -->
+        <button type="reset" id="botao-cancelar">Cancelar</button> <!-- Botão cancelar -->
+    </form>
+    <ul>
+        <li>
+            <img src="images/foto1.jpg" alt="Pintura de um gato" /> <!-- Imagem -->
+            <div class="overlay-image-link">
+                <a href="images/foto1.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="images/foto2.jpg" alt="Foto de um flamingo" /> <!-- Imagem -->
+            <div class="overlay-image-link">
+                <a href="images/foto2.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="images/foto3.jpg" alt="Foto de 2 cachorros filhotes em um saco" /> <!-- Imagem -->
+            <div class="overlay-image-link">
+                <a href="images/foto3.jpg" title="Ver imagem em tamanho real" target="_blank">
+                    Ver imagem em tamanho real
+                </a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- Utilizando JQuery -->
+    <script src="/main.js"></script> <!-- Linkando o JavaScript -->
+</body>
+
+</html>
