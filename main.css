@@ -65,7 +65,7 @@ ul li img{ /* Limitando o tamanho das imagens a 100% (Se cada uma é 25% 4 image
     width: 100%; /* Isso tambem ajuda a tirar as imagens uma de cima da outra */
 }
 
-.overlay-image-link{
+.overlay-imagem-link{
     padding: 16px;
     background-color: rgba(0, 0, 0, 0.7);
     position: absolute; /* Position absolute - Para nao "vazar" a gente tem que aplicar outra position em na parte onde se incontra a <li> */
@@ -76,12 +76,11 @@ ul li img{ /* Limitando o tamanho das imagens a 100% (Se cada uma é 25% 4 image
     transition: all ease .5s; /* Transição!!!!! 0.5s para a barra aparecer quando colocado o mouse*/
 }
 
-.overlay-image-link a{
+.overlay-imagem-link a{
     color: #fff;
     text-decoration: none; /* Removendo a ___ */
 }
 
-ul li:hover .overlay-image-link{ 
+ul li:hover .overlay-imagem-link{ 
     opacity: 1; /* Fazendo com que a barra volte a aparecer quando colocado o mouse */
-
 }
